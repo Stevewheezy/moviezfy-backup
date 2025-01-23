@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Link to Normalize.css for consistent styling -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <title>Moviezfy - Find Your Movie</title>
+
+  <link rel="icon" type="image/x-icon" href="images/moviezfy small logo.png">
+
+  <!-- Link to your custom styles.css -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Font Awesome (for icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+  
+<body class="bg-gray-900 text-white px-6">
+  
+ <!-- Navigation Bar -->
+<header class="w-full py-4 px-6 bg-gray-800 shadow-md fixed top-0 z-10">
+  <div class="max-w-7xl mx-auto flex items-center justify-between">
+    <h1 class="text-3xl font-bold text-red-600"><a href="index.html">Moviezfy</a></h1>
+      
+  <!-- Mobile Navigation Menu -->
+  <div class="mobile-menu hidden bg-gray-800 text-white p-6">
+    <a href="index.html" class="block py-2 hover:text-red-600">Home</a>
+    <a href="about.html" class="block py-2 hover:text-red-600">About</a>
+  </div>
+</header>
+  
+<!-- Search Section -->
+<section id="search-section" class="search-container mt-20 px-6">
+  <input type="text" id="search-bar" class="search-input" placeholder="Search for movies...">
+  <button id="search-btn" class="search-btn">Search</button>
+</section>
+
+<!-- Genre Section -->
+<section id="genre-section" class="genre-container">
+  <div class="flex justify-center flex-wrap space-x-4 mb-6">
+    <h2 class="text-gray-400">Filter by Genre</h2>
+    <button class="genre-btn bg-gray-700 hover:bg-red-600 text-white py-2 px-4 rounded-md">Action</button>
+    <button class="genre-btn bg-gray-700 hover:bg-red-600 text-white py-2 px-4 rounded-md">Comedy</button>
+    <button class="genre-btn bg-gray-700 hover:bg-red-600 text-white py-2 px-4 rounded-md">Drama</button>
+    <button class="genre-btn bg-gray-700 hover:bg-red-600 text-white py-2 px-4 rounded-md">Thriller</button>
+    <button class="genre-btn bg-gray-700 hover:bg-red-600 text-white py-2 px-4 rounded-md">Romance</button>
+    <button class="genre-btn bg-gray-700 hover:bg-red-600 text-white py-2 px-4 rounded-md">Horror</button>
+  </div>
+</section>
+
+<!-- Movie Grid Section -->
+<section id="movie-grid-section" class="w-3/4 p-6 mx-auto">
+  <div id="movie-grid" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+    <!-- Movie cards dynamically added -->
+  </div>
+</section>
+
+<!-- Load More Button -->
+<section id="Show-more"> 
+  <button id="load-more-btn" class="btn">Show More</button>
+</section>
+  
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 py-6 mt-10">
+    <div class="max-w-7xl mx-auto text-center text-gray-400">
+      <p>&copy; 2025 Moviezfy, All rights reserved.</p>
+      <p>Designed by Stephen Oyelabi.</p>
+    </div>
+  </footer>
+
+  <!-- Movie Details Modal (hidden initially) -->
+  <div id="movie-detail-modal" class="fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center hidden">
+    <div class="bg-gray-800 rounded-lg p-6 w-96 text-white">
+      <button id="close-modal" class="absolute top-3 right-3 text-red-600 text-xl">&times;</button>
+      <h2 id="movie-title" class="text-2xl font-bold mb-4">Movie Title</h2>
+      <img id="movie-poster" src="" alt="Movie Poster" class="w-full h-72 object-cover rounded-lg mb-4">
+      <p id="movie-description" class="mb-4">Movie description will go here...</p>
+      <div class="flex justify-between text-sm">
+        <span><strong>Year:</strong> <span id="movie-year">2025</span></span>
+        <span><strong>Rating:</strong> <span id="movie-rating">N/A</span></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript for Dynamic Interactivity -->
+  <script src="app.js"></script>
+</body>
+</html>

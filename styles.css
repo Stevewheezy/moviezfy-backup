@@ -1,0 +1,512 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a202c; /* Dark gray */
+    color: #ffffff;
+    line-height: 1.8;
+  }
+  
+  /* Navigation Bar */
+/* General Styles for Header */
+header {
+  background-color: #2d3748; /* Gray background */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+
+a h1 {
+  color: #e53e3e; /* Your desired red color */
+  text-decoration: none;
+}
+
+/* Navigation Links (Desktop) */
+nav a {
+  color: #ffffff; /* White text */
+  font-size: 1.125rem; /* Slightly larger font size for bold effect */
+  font-weight: bold; /* Make the text bold */
+  text-decoration: none; /* Remove underline */
+  margin-left: .5rem; /* Add space between links */
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #e53e3e; /* Red color on hover */
+}
+
+
+/* Mobile Menu */
+.mobile-menu a {
+  color: #ffffff; /* White text for mobile menu */
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5rem 0; /* Add spacing between links */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Divider for mobile links */
+  transition: color 0.3s ease-in-out;
+}
+
+.mobile-menu a:last-child {
+  border-bottom: none; /* Remove border from the last link */
+}
+
+.mobile-menu a:hover {
+  color: #e53e3e; /* Red color on hover */
+}
+
+/* Mobile Menu  */
+.mobile-menu {
+  display:flexbox;
+  flex-direction: column;
+  width: 100%;
+  background-color: #1a202c; 
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-weight: 700;
+}
+
+/* Style the h1 tag within the anchor tag */
+a h1 {
+  color: #ffffff; 
+  text-decoration: none; 
+}
+  
+  /* Search Section */
+  .search-container {
+    margin-top: 150px; /* Adjusted for fixed header */
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .search-input {
+    width: 70%;
+    max-width: 500px;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #4a5568; /* Gray border */
+    background-color: #2d3748; /* Darker gray */
+    color: #ffffff;
+    font-size: 1rem;
+  }
+  
+  .search-input::placeholder {
+    color: #a0aec0; /* Light gray */
+  }
+  
+  .search-btn {
+    background-color: #e53e3e; /* Red */
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    margin-left: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .search-btn:hover {
+    background-color: #c53030; /* Darker red */
+  }
+  
+  /* Genre Section */
+  .genre-container {
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .genre-btn {
+    background-color: #4a5568; /* Gray */
+    color: #ffffff;
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .genre-btn:hover {
+    background-color: #e53e3e; /* Red */
+  }
+
+  /* Selected button styles */
+.genre-btn.selected {
+  background-color: #e53e3e; /* Red */
+  font-weight: bold;
+  box-shadow: 0 0 8px rgba(229, 62, 62, 0.8); /* Add glow effect */
+}
+  
+  /* Movie Grid Section */
+  #movie-grid-section {
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  #movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+  }
+  
+  #movie-grid div {
+    background-color: #2d3748; /* Darker gray */
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: center;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  #movie-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  #movie-grid h3 {
+    color: #e53e3e; /* Red */
+    font-size: 1rem;
+    margin: 10px 0;
+  }
+  
+  /* Load More Button */
+  #load-more-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #e53e3e; /* Red */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  #load-more-btn:hover {
+    background-color: #c53030; /* Darker red */
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #2d3748; /* Darker gray */
+    color: #a0aec0; /* Light gray */
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+  }
+  
+  footer p {
+    margin: 5px 0;
+  }
+  
+  /* Movie Details Modal */
+  
+  section.mt-20.p-6 {
+    margin-top: 90px; /* Increase this value to move the section further down */
+  }
+  
+  body {
+    margin: 0 20px; /* Adjust the 20px value as needed */
+  }
+  #movie-detail-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+  }
+  
+  #movie-detail-modal.active {
+    display: flex;
+  }
+  
+  #movie-detail-modal .rounded-lg {
+    background-color: #2d3748; /* Darker gray */
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  #movie-detail-modal img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  #close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #e53e3e; /* Red */
+    cursor: pointer;
+  }
+  
+  #movie-poster {
+    width: 80% !important; /* Reduce the size further */
+    max-width: 200px !important; /* Limit the maximum width */
+    height: auto !important; /* Maintain aspect ratio */
+    object-fit: cover !important; /* Ensure it doesn’t stretch */
+    border-radius: 0.75rem !important; /* Rounded corners */
+    margin: 0 auto !important; /* Center the image */
+    display: block !important; /* Centering compatibility */
+    transition: opacity 0.3s ease !important; /* Keep hover effect smooth */
+  }
+  
+  
+  /* For medium screens and above (MD breakpoint) */
+  @media (min-width: 768px) {
+    #movie-poster {
+      max-width: 300px; /* Slightly larger on medium screens */
+    }
+  }
+  
+  /* Hover effect */
+  #movie-poster:hover {
+    opacity: 0.75; /* Reduced opacity on hover */
+  }
+  
+  #movie-trailer-link {
+    background-color: #e11d48; /* Custom red color */
+    color: white;
+    font-size: 1.125rem; /* Adjust font size */
+    padding: 10px 20px; /* Adjust padding for better button size */
+    border-radius: 0.5rem; /* Rounded corners */
+    text-align: center;
+    display: inline-block;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  }
+  
+  #movie-trailer-link:hover {
+    background-color: #9b1c2f; /* Darker red on hover */
+    transform: translateY(-2px); /* Slight lift effect */
+  }
+  
+  #movie-trailer-link:focus {
+    outline: none; /* Removes default focus outline */
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.6); /* Custom focus outline */
+  }
+  
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    header nav {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .search-input {
+      width: 90%;
+    }
+  
+    #movie-grid {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    }
+  
+    #movie-detail-modal .rounded-lg {
+      padding: 15px;
+    }
+  }
+  
+  /* About Page Specific Styles */
+
+/* Main About Section */
+
+/* Styles for the About Moviezfy Section */
+section.mt-20 {
+  padding-top: 5rem; /* Add padding to the top */
+}
+
+section.mt-20 .max-w-7xl {
+  text-align: center;
+  padding-top: 25px;
+}
+
+section.mt-20 h2 {
+  color: #e53e3e; /* Red color for the heading */
+  font-size: 2.25rem; /* 4xl font size */
+  font-weight: bold;
+  margin-bottom: 1.5rem; /* Space below the heading */
+  padding-top: 10px;
+}
+
+section.mt-20 p {
+  color: #ebecec; /* Gray color for the paragraph */
+  font-size: 1.125rem; /* lg font size */
+  margin-bottom: 2rem; /* Space below the paragraph */
+}
+
+body {
+    margin: 0 20px; /* Adjust the 20px value as needed */
+    padding-top: 10px;
+  }
+
+  /* Promotional Section */
+  .bg-gray-800.rounded-lg.p-8.shadow-lg {
+    background-color: #1f2937;
+    border: 1px solid #374151;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .bg-gray-800.rounded-lg.p-8.shadow-lg h3 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    color: #e3342f;
+  }
+  
+  .bg-gray-800.rounded-lg.p-8.shadow-lg p {
+    color: #cbd5e0;
+    margin-bottom: 1.5rem;
+  }
+  
+  .bg-gray-800.rounded-lg.p-8.shadow-lg a {
+    background-color: #e3342f;
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.375rem;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .bg-gray-800.rounded-lg.p-8.shadow-lg a:hover {
+    background-color: #c53030;
+  }
+  
+  /* Developer Bio Section */
+  .mt-12.flex.justify-center.items-center {
+    margin-top: 3rem;
+  }
+  
+  .mt-12.flex.justify-center.items-center img {
+    border-radius: 50%;
+    width: 8rem;
+    height: 8rem;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  .mt-12.flex.justify-center.items-center h4 {
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 0.5rem;
+  }
+  
+  .mt-12.flex.justify-center.items-center p {
+    color: #d1d5db;
+    line-height: 1.7;
+  }
+  
+  /* Footer (No changes unless needed) */
+  footer.bg-gray-800.py-6 {
+    margin-top: 5rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    /* Adjust section padding for mobile */
+    section.mt-20.px-6.py-12 {
+      padding: 3rem 1rem;
+      padding-top: 10px;
+    }
+  
+    .mt-12.flex.justify-center.items-center {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .mt-12.flex.justify-center.items-center img {
+      margin-bottom: 1rem;
+    }
+  
+    .bg-gray-800.rounded-lg.p-8.shadow-lg {
+      padding: 2rem 1rem;
+    }
+  
+    .bg-gray-800.rounded-lg.p-8.shadow-lg a {
+      display: inline-block;
+      margin: 0 auto;
+    }
+  }
+  
+  /* Movie Poster Styling */
+#movie-poster {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  #movie-poster:hover {
+    transform: scale(1.05);
+    opacity: 0.85;
+  }
+  
+  /* Movie Information Section */
+  #movie-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #ff3b3f;
+  }
+  
+  #movie-description {
+    font-size: 1.125rem;
+    line-height: 1.75;
+    color: #b3b3b3;
+  }
+  
+  /* Movie Year, Rating, Duration */
+  #movie-year, #movie-rating, #movie-duration {
+    color: #d1d1d1;
+  }
+  
+  /* Movie Genres and Cast */
+  #movie-genres, #movie-cast {
+    color: #ff3b3f;
+    font-weight: 500;
+  }
+  
+  #movie-genres span, #movie-cast span {
+    display: inline-block;
+    margin-right: 5px;
+    font-style: italic;
+  }
+  
+  /* Trailer Button */
+  #movie-trailer-link {
+    background-color: #c0191c;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
+  
+  #movie-trailer-link:hover {
+    background-color: #e0292d;
+  }
+  
+  /* Reviews Section */
+  #movie-reviews {
+    margin-top: 20px;
+    color: #b3b3b3;
+  }
+  
+  #movie-reviews h3 {
+    color: #ff3b3f;
+    font-weight: 600;
+  }
+  
+  #movie-review {
+    font-style: italic;
+    color: #f0f0f0;
+  }
+  
