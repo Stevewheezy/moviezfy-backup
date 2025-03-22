@@ -509,3 +509,119 @@ body {
     color: #f0f0f0;
   }
   
+  /* ...existing code... */
+
+/* Light Mode Styles */
+body.light-mode {
+  background-color: #f9f9f9; /* Light background */
+  color: #333; /* Dark text */
+}
+
+.light-mode header {
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.light-mode nav a {
+  color: #555;
+}
+
+.light-mode nav a:hover {
+  color: #e53e3e;
+}
+
+.light-mode .search-input {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #333;
+}
+
+.light-mode .search-input::placeholder {
+  color: #777;
+}
+
+.light-mode .genre-btn {
+  background-color: #ddd;
+  color: #444;
+}
+
+.light-mode .genre-btn:hover {
+  background-color: #e53e3e;
+  color: #fff;
+}
+
+.light-mode #movie-grid div {
+  background-color: #eee;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode footer {
+  background-color: #eee;
+  color: #555;
+}
+
+.light-mode #movie-detail-modal .rounded-lg {
+  background-color: #eee;
+  color: #333;
+}
+
+/* About Page Light Mode Styles */
+.light-mode section.mt-20 {
+  background-color: #f9f9f9;
+}
+
+.light-mode .bg-gray-800.rounded-lg.p-8.shadow-lg {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.light-mode .bg-gray-800.rounded-lg.p-8.shadow-lg h3 {
+  color: #e3342f;
+}
+
+.light-mode .bg-gray-800.rounded-lg.p-8.shadow-lg p {
+  color: #666;
+}
+
+.light-mode .mt-12.flex.justify-center.items-center h4 {
+  color: #333;
+}
+
+.light-mode .mt-12.flex.justify-center.items-center p {
+  color: #666;
+}
+
+/* Movie Details Page Light Mode Styles */
+.light-mode #movie-title {
+  color: #e53e3e;
+}
+
+.light-mode #movie-description {
+  color: #555;
+}
+
+.light-mode #movie-year,
+.light-mode #movie-rating,
+.light-mode #movie-duration {
+  color: #444;
+}
+
+.light-mode #movie-genres,
+.light-mode #movie-cast {
+  color: #e53e3e;
+}
+
+.light-mode #movie-reviews {
+  color: #555;
+}
+
+.light-mode #movie-reviews h3 {
+  color: #e53e3e;
+}
+
+.light-mode #movie-review {
+  color: #444;
+}

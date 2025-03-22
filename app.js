@@ -224,3 +224,13 @@ searchBtn.addEventListener('click', () => {
   currentPage = 1; // Reset to the first page
   searchMovies();
 });
+
+// ...existing code...
+
+// Theme Toggle
+const themeToggleBtn = document.getElementById('theme-toggle');
+const body = document.body;
+
+themeToggleBtn.addEventListener('click', () => {
+  body.classList.toggle('light-mode');
+});
